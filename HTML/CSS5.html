@@ -1,0 +1,38 @@
+<style>
+    /* 문서 구조상 같은 부모의 n번째 자식 요소 */
+    .child>u:nth-child(odd) {
+        background-color: greenyellow;
+    }
+    /* 문서 구조상 같은 부모의 같은 유형 자식 중 n번째 요소 */
+    .type>u:nth-of-type(even) {
+        background-color: greenyellow;
+    }
+     /* 문서 구조상 같은 부모의 n번째 자식 요소 */
+    .child1>u:nth-child(2n) {
+        background-color: greenyellow;
+    }
+    /* 문서 구조상 같은 부모의 같은 유형 자식 중 n번째 요소 */
+    .type1>u:nth-of-type(2n) {
+        background-color: greenyellow;
+    }
+ 
+
+</style>
+
+<body>
+    <div class="child">
+        <u>1번</u> <u>2번</u> <em>3번</em>
+        <u>4번</u> <u>5번</u> <u>6번</u>
+    </div>
+    <div class="type">
+        <u>1번</u> <u>2번</u> <em>3번</em>
+        <u>4번</u> <u>5번</u> <u>6번</u>
+    </div>
+    <div class="child1">
+        <u>1번</u> <u>2번</u> <em>3번</em>
+        <u>4번</u> <u>5번</u> <u>6번</u>
+    </div>
+    <div class="type1">
+        <u>1번</u> <u>2번</u> <em>3번</em>
+        <u>4번</u> <u>5번</u> <u>6번</u>
+</body>

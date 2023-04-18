@@ -1,0 +1,78 @@
+<style>
+    /* 인풋인접형제span은 숨기기 */
+    input+span {
+        display: none;
+    }
+
+    /* 인풋이 체크된경우 인접형제 span 보이기  */
+    input:checked+span {
+        display: inline-block;
+    }
+
+    /* 인풋이 체크된 경우 인접형제의 인접형제 숨기기 */
+    input:checked+span+span {
+        display: none;
+    }
+
+    /* span: 문단 transition 변화 */
+    span {
+        transition: 3.0s;
+    }
+
+    /* 마우스를 올리거나 클릭시 변화 */
+    span {
+        transition: 1.5s;
+        text-decoration: none;
+        color: black;
+    }
+
+    span:hover {
+        background-color: gold;
+    }
+
+
+</style>
+
+<body>
+    <input type="checkbox">
+    <span style="color:green;">선택O</span>
+    <span style="color: red;">선택X</span>
+    <hr>
+    <input type="checkbox">
+    <span style="color:green;">선택O</span>
+    <span style="color: red;">선택X</span>
+</body>
+<hr>
+
+<body>
+    
+    <style>
+    /* 바뀌는시간1.5s */
+    a { transition: 1.5s; text-decoration: none; color: black; }
+    /* 올려놓으면 */
+    a:hover { background-color: gold; }
+    /* 클릭하고있는동안 */
+    a:active { background-color: aqua; }
+    /* 방문해있으면 불투명도0.7 */
+    a:visited { opacity: 0.7; color: gray; }
+    </style>
+    <a href="http://ggoreb.com">
+    이 링크를 가리켜보세요.
+    </a>
+
+    <style>
+        .r:focus {
+            background: yellow;
+            color: red;
+        }
+
+        .g:focus {
+            background: yellow;
+            color: green;
+        }
+    </style>
+
+    <input class="r" value="focus => red"><br>
+    <input class="g" value="focus => green">
+
+</body>
