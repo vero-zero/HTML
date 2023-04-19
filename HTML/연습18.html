@@ -1,0 +1,19 @@
+<style>
+    /* textarea 기본적으로 안보임 사이즈 변경 x */
+    textarea{display: none;,resize: none;}
+    /* 인풋이 체크되면 label과 textarea 출력 */
+    input:checked+ label+ textarea
+    {display: inline-block; }
+</style>
+
+<body>
+    <input type='checkbox' id='a'>
+    <label for='a'>정보 1</label>
+    <textarea name='info_a'></textarea><br>
+    <input type='checkbox' id='b'>
+    <label for='b'>정보 2</label>
+    <textarea name='info_b'></textarea><br>
+    <input type='checkbox' id='c'>
+    <label for='c'>정보 3</label>
+    <textarea name='info_c'></textarea>
+</body>

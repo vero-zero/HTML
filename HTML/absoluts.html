@@ -1,0 +1,33 @@
+<style>
+    body {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    p {
+        background-color: rgb(207, 232, 220);
+        border: 2px solid rgb(79, 185, 227);
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+    }
+
+    .abs {
+        position: absolute;/* HTML 문서 기준 절대 좌표를 사용하여 배치 */
+        bottom: 0px;
+        top: 0px;
+        left: 100px;
+        background-color: rgba(255, 84, 104, .3)
+    }
+</style>
+
+<body>
+    <h1>absolute 적용</h1>
+    <!-- 포지션을 rel로 주면 static 의 배치 방식에 추가로 위치 이동 가능 -->
+    <div style="position: relative;">
+        <p>static</p>
+        <p class='abs'>absolute</p>
+        <p>static</p>
+    </div>
+</body>
+    

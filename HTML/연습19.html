@@ -1,0 +1,57 @@
+<style>
+/*     div>div { float: right; 
+    background-color: hsl(0, 0%, 100%);
+    border-color: grey;
+    border-radius: 20%;
+    margin: 10px;} */
+
+    #content {background-color: grey ;
+    width: 700px;}
+    #content > div {
+        display: inline-block;/* 가로로배치 */
+        background-color: white;
+        border-radius: 20px;
+/*         width: 25%; */
+        margin: 10px;}
+        #content > div:first-child{
+            bottom: 50px;
+            /* 오른쪽을 기준으로 50px 이동해라 */
+            background-color: red;
+            position: absolute;  
+            /* static 방식에 추가로 위치이동가능 */
+        }
+        #content > div:nth-child(2){
+            top: 50px;
+            position: static;
+            /* static 방식에 추가로 위치이동가능 */
+        }
+        
+
+</style>
+
+<body>
+    <div id="content">
+        <div>
+            <h1>공지사항1</h1>
+            <ul>
+                <li>게시물_01</li>  
+                <li>게시물_02</li>
+            </ul>
+        </div>
+        <div>
+            <h1>공지사항2</h1>
+            <ul>
+                <li>게시물_01</li>
+                <li>게시물_02</li>
+            </ul>
+        </div>
+        <div>
+            <h1>공지사항3</h1>
+            <ul>
+                <li>게시물_01</li>
+                <li>게시물_02</li>
+            </ul>
+        </div>
+        <!-- 위 공지사항 코드 2번 반복 -->
+    </div>
+</body>
